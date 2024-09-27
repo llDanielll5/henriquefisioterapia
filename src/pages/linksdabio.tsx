@@ -56,7 +56,13 @@ const LinksDaBioPage = () => {
   return (
     <Container>
       <Head>
-        <title>Todas Conexões da drª Karla Braga</title>
+        <title>Todas Conexões da drº Pedro Henrique Mota</title>
+        <meta
+          name="description"
+          content={
+            "Henrique Fisioterapia | Home Care | Ortopedia | Neurologia | Geriatria | Pediatria | Liberação Miofacial"
+          }
+        />
       </Head>
       <Logo src="/images/logo-white.svg" />
       <CallText variant="h4" color="white">
