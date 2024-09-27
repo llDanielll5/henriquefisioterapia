@@ -8,7 +8,7 @@ const HeadLanding = () => {
 
   const dynamicTitle =
     router.pathname === "/"
-      ? "Henrique Fisioterapia 👨‍⚕️"
+      ? "Henrique Mota Fisioterapeuta 👨‍⚕️"
       : router.pathname === "/categories"
       ? "Marie Papelaria Fofa | Todas Categorias"
       : router.pathname === "/cart"
