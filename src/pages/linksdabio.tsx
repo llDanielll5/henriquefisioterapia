@@ -1,6 +1,13 @@
 import React from "react";
 import { COLORS } from "@/globals/utils/colors";
-import { Box, IconButton, Stack, styled, Typography } from "@mui/material";
+import {
+  alpha,
+  Box,
+  IconButton,
+  Stack,
+  styled,
+  Typography,
+} from "@mui/material";
 import { INSTAGRAM_CONTACT } from "@/globals/utils/contacts";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -16,7 +23,7 @@ const links: { title: string; icon: IconsLinksDaBioTypes; url: string }[] = [
   {
     title: "Website",
     icon: "website",
-    url: "https://karlabraganutricionista.com.br",
+    url: "https://henriquefisioterapia.vercel.app",
   },
   {
     title: "Fale Comigo!",
@@ -51,9 +58,9 @@ const LinksDaBioPage = () => {
       <Head>
         <title>Todas Conexões da drª Karla Braga</title>
       </Head>
-      <Logo src="/images/logo-black.svg" />
+      <Logo src="/images/logo-white.svg" />
       <CallText variant="h4" color="white">
-        <span>Karla Braga Nutricionista</span>
+        <span>Henrique Mota Fisioterapeuta</span>
       </CallText>
 
       <CallText
@@ -61,9 +68,9 @@ const LinksDaBioPage = () => {
         variant="h6"
         fontWeight={400}
         fontFamily={"Quicksand"}
-        color="white"
+        color={COLORS.PRIMARY}
       >
-        <span>Nos chame no nosso Whatsapp ou saiba mais no nosso site!</span>
+        Nos chame no nosso Whatsapp ou saiba mais no nosso site!
       </CallText>
 
       <Stack direction={"row"} alignItems={"center"} columnGap={2}>
@@ -96,7 +103,7 @@ const LinksDaBioPage = () => {
 
 const Container = styled(Box)`
   min-height: 100vh;
-  background-color: ${COLORS.SECONDARY};
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,10 +138,10 @@ const CallText = styled(Typography)`
   span {
     background: linear-gradient(
       90deg,
-      #deb25f 10%,
+      ${COLORS.PRIMARY} 10%,
       ${COLORS.GOLD} 20.85%,
-      goldenrod 50%,
-      #deb25f 82.56%
+      ${COLORS.GOLD} 50%,
+      ${COLORS.PRIMARY} 82.56%
     );
     background-clip: text;
     -webkit-background-clip: text;
